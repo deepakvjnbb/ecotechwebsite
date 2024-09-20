@@ -105,13 +105,14 @@ export default function HeadSection() {
       <div className="relative z-10 isolate overflow-hidden h-screen  ">
      
   <video
-    autoPlay
-    loop
-    muted
-    className="absolute inset-0 w-full h-full object-cover"
-  >
-    <source src={bgvideo} type="video/mp4" />
-  </video>
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="absolute inset-0 w-full h-full object-cover"
+>
+  <source src={bgvideo} type="video/mp4" />
+</video>
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 z-20 transform-gpu overflow-hidden blur-3xl sm:-top-80"
