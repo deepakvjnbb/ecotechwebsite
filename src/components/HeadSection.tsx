@@ -1,10 +1,7 @@
-'use client'
-
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import bgvideo from './photos/video2.mp4'
-// import logo from './photos/ecotechwhitelogo.png'
 import logo from './photos/ecotechlogo2024.png'
 
 const navigation = [
@@ -18,6 +15,10 @@ const navigation = [
 export default function HeadSection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  const handleMobileLinkClick = () => {
+    setMobileMenuOpen(false); // Close the mobile menu after clicking
+  }
+
   return (
     <div id="home" className="bg-gray-900">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -25,11 +26,7 @@ export default function HeadSection() {
           <div className="flex lg:flex-1">
             <a href="#home" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src={logo}
-                className="h-16 w-auto"
-              />
+              <img alt="" src={logo} className="h-16 w-auto" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -61,11 +58,7 @@ export default function HeadSection() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Eco Tech</span>
-                <img
-                  alt=""
-                  src={logo}
-                  className="h-8 w-auto"
-                />
+                <img alt="" src={logo} className="h-8 w-auto" />
               </a>
               <button
                 type="button"
@@ -83,6 +76,7 @@ export default function HeadSection() {
                     <a
                       key={item.name}
                       href={item.href}
+                      onClick={handleMobileLinkClick} // Close menu after clicking
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                     >
                       {item.name}
@@ -91,7 +85,7 @@ export default function HeadSection() {
                 </div>
                 <div className="py-6">
                   <a
-                    href="#"
+                    href="tel:+91 90952 53000"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                   >
                     +91 90952 53000
@@ -103,47 +97,28 @@ export default function HeadSection() {
         </Dialog>
       </header>
 
-      <div className="relative z-10 isolate overflow-hidden h-screen  ">
-     
-  <video
-  autoPlay
-  loop
-  muted
-  playsInline
-  className="absolute inset-0 w-full h-full object-cover"
->
-  <source src={bgvideo} type="video/mp4" />
-</video>
-        <div
-          aria-hidden="true"
-          className="absolute inset-x-0 -top-40 z-20 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        >
-        </div>
+      <div className="relative z-10 isolate overflow-hidden h-screen">
+        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
+          <source src={bgvideo} type="video/mp4" />
+        </video>
+        <div aria-hidden="true" className="absolute inset-x-0 -top-40 z-20 transform-gpu overflow-hidden blur-3xl sm:-top-80"></div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          </div>
           <div className="text-center relative z-30">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Filtering out impurities, keeping in the goodness
+              Filtering out impurities, keeping in the goodness
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-            Experience the power of advanced filtration that removes harmful impurities while preserving essential minerals. Enjoy safe, refreshing water that tastes as good as it looks.
+              Experience the power of advanced filtration that removes harmful impurities while preserving essential minerals. Enjoy safe, refreshing water that tastes as good as it looks.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#whoweare"
-                className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-300"
               >
                 Get started
               </a>
-          
             </div>
           </div>
-        </div>
-        <div
-          aria-hidden="true"
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-        > 
         </div>
       </div>
     </div>
