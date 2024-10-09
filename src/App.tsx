@@ -6,19 +6,21 @@ import WhoweareSection from './components/WhoweareSection';
 import ProductSection from './components/ProductSection';
 import FooterSection from './components/FooterSection';
 import ContactSection from './components/ContactSection';
-import StatSection from './components/StatSection';
+import LogoSection from './components/LogoSection';
 import TestimonialsSection from './components/Testimonials';
 import CalltoactionSection from './components/CalltoactionSection';
+import ProjectGallery from './components/ProjectGallary'
 
 function App() {
   return (
-    <div>
+    <div >
     <HeadSection/>
     <WhoweareSection/>
-    <StatSection/>
+    <LogoSection/>
     <ProductSection/>
-    <CalltoactionSection/>
+    <ProjectGallery/>
     <WhatwedoSection/>
+    <CalltoactionSection/>
     <TestimonialsSection/>
     <ContactSection/>
     <FooterSection/>

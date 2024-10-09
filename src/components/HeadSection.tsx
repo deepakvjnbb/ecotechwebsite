@@ -4,25 +4,26 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import bgvideo from './photos/video2.mp4'
-import logo from './photos/ecotechlogo.jpg'
+// import logo from './photos/ecotechwhitelogo.png'
+import logo from './photos/ecotechlogo2024.png'
 
 const navigation = [
-  { name: 'Who we are', href: '#' },
-  { name: 'What do we do', href: '#' },
-  { name: 'Our Products', href: '#' },
-  { name: 'Our Projects', href: '#' },
-  { name: 'Contact us', href: '#' },
+  { name: 'Who we are', href: '#whoweare' },
+  { name: 'Our Products', href: '#ourproducts' },
+  { name: 'Our Projects', href: '#ourprojects' },
+  { name: 'What do we do', href: '#whatdowedo' },
+  { name: 'Contact us', href: '#contactus' },
 ]
 
 export default function HeadSection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-gray-900">
+    <div id="home" className="bg-gray-900">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="#home" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
@@ -49,7 +50,7 @@ export default function HeadSection() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-md font-semibold leading-6 text-white">
+            <a href="tel:+91 90952 53000" className="text-md font-semibold leading-6 text-white">
               +91 90952 53000
             </a>
           </div>

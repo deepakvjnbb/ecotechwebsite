@@ -1,4 +1,5 @@
 import React from "react"
+import logo from "./photos/ecotechlogo2024.png"
 /*
   This example requires some changes to your config:
   ```
@@ -16,48 +17,42 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 export default function ContactSection() {
   return (
-    <div className="relative bg-white">
+    <div id="contactus" className="relative bg-white">
       <div className="absolute inset-0">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-green-200" />
       </div>
       <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
         <div className="bg-green-200 px-6 py-16 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
           <div className="mx-auto max-w-lg">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Get in touch</h2>
-            <p className="mt-3 text-lg leading-6 text-gray-500">
-              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus
-              arcu.
-            </p>
-            <dl className="mt-8 text-base text-gray-500">
+            <img src={logo} alt="logo image" width={260}/>
+            {/* <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Get in touch</h2> */}
+           
+            <dl className="mt-8 text-base text-gray-900">
               <div>
                 <dt className="sr-only">Postal address</dt>
                 <dd>
-                  <p>45, RVL Nager</p>
-                  <p>Kamarajar Road, Coimbatore 641015</p>
+                  <h3 className="font-bold"> Registered office </h3>
+                  <p>No 45, RVL Nager</p>
+                  <p>Kamarajar Road </p>
+                  <p>Coimbatore - 641015 </p>
                 </dd>
               </div>
               <div className="mt-6">
                 <dt className="sr-only">Phone number</dt>
                 <dd className="flex">
-                  <PhoneIcon aria-hidden="true" className="h-6 w-6 flex-shrink-0 text-gray-400" />
-                  <span className="ml-3">+91 90952 53000</span>
+                  <PhoneIcon aria-hidden="true" className="h-6 w-6 flex-shrink-0 text-gray-900" />
+                  <a href="tel:+91 90952 53000" className="ml-3 hover:text-gray-600" >+91 90952 53000</a>
                 </dd>
               </div>
               <div className="mt-3">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
-                  <EnvelopeIcon aria-hidden="true" className="h-6 w-6 flex-shrink-0 text-gray-400" />
-                  <span className="ml-3">support@ecotech.in</span>
+                  <EnvelopeIcon aria-hidden="true" className="h-6 w-6 flex-shrink-0 text-gray-900" />
+                  <a href="mailto:support@ecotech.in" className="ml-3 hover:text-gray-600">support@ecotech.in</a>
                 </dd>
               </div>
             </dl>
-            <p className="mt-6 text-base text-gray-500">
-              Looking for careers?{' '}
-              <a href="#" className="font-medium text-gray-700 underline">
-                Fill up the form for job application
-              </a>
-              .
-            </p>
+          
           </div>
         </div>
         <div className="bg-green-200 px-6 py-16 lg:col-span-3 lg:px-8 lg:py-24 xl:pl-12">
