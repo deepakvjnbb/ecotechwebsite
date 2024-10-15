@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import bgvideo from './photos/video2.mp4'
-import logo from './photos/ecotechlogo2024.png'
+import logo from './photos/ecotechlogor2.png'
 
 const navigation = [
   { name: 'Who we are', href: '#whoweare' },

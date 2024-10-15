@@ -27,21 +27,21 @@ export default function ProjectGallery() {
           <div className="grid gap-4">
             <div className="relative">
               <img
-                className="h-70 w-full rounded-lg object-cover"
+                className="h-90 w-full rounded-lg object-cover"
                 src={proj1}
                 alt="gallery-photo"
               />
             </div>
             <div className="relative">
               <img
-                className="h-60 w-full rounded-lg object-cover"
+                className="h-80 w-full rounded-lg object-cover"
                 src={proj2}
                 alt="gallery-photo"
               />
             </div>
             <div className="relative">
               <img
-                className="h-110 w-full rounded-lg object-cover"
+                className="h-130 w-full rounded-lg object-cover"
                 src={proj3}
                 alt="gallery-photo"
               />
@@ -50,21 +50,21 @@ export default function ProjectGallery() {
           <div className="grid gap-4">
             <div className="relative">
               <img
-                className="h-90 w-full rounded-lg object-cover"
+                className="h-110 w-full rounded-lg object-cover"
                 src={proj4}
                 alt="gallery-photo"
               />
             </div>
             <div className="relative">
               <img
-                className="h-80 w-full rounded-lg object-cover"
+                className="h-90 w-full rounded-lg object-cover"
                 src={proj5}
                 alt="gallery-photo"
               />
             </div>
             <div className="relative">
               <img
-                className="h-70 w-full rounded-lg object-cover"
+                className="h-80 w-full rounded-lg object-cover"
                 src={proj6}
                 alt="gallery-photo"
               />
@@ -96,14 +96,14 @@ export default function ProjectGallery() {
           <div className="grid gap-4">
             <div className="relative">
               <img
-                className="h-90 w-full rounded-lg object-cover"
+                className="h-110 w-full rounded-lg object-cover"
                 src={proj10}
                 alt="gallery-photo"
               />
             </div>
             <div className="relative">
               <img
-                className="h-full w-full rounded-lg object-cover"
+                className="h-80 w-full rounded-lg object-cover"
                 src={proj11}
                 alt="gallery-photo"
               />
