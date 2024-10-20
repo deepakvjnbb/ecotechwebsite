@@ -36,7 +36,7 @@ export default function ContactSection() {
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
-        alert("Your message has been received, we will get back to you shortly");
+        alert("Thank you for contacting Ecotech. Our team will be contacting you soon");
         setFormData({
           fullName: "",
           email: "",
