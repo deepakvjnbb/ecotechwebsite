@@ -5,11 +5,11 @@ import bgvideo from './photos/video2.mp4'
 import logo from './photos/ecotechlogor2.png'
 
 const navigation = [
-  { name: 'Who we are', href: 'whoweare' },
-  { name: 'Our Products', href: 'ourproducts' },
-  { name: 'Our Projects', href: 'ourprojects' },
-  { name: 'What do we do', href: 'whatdowedo' },
-  { name: 'Contact us', href: 'contactus' },
+  { name: 'Who we are', href: '#whoweare' },
+  { name: 'Our Products', href: '#ourproducts' },
+  { name: 'Our Projects', href: '#ourprojects' },
+  { name: 'What do we do', href: '#whatdowedo' },
+  { name: 'Contact us', href: '#contactus' },
 ]
 
 export default function HeadSection() {
