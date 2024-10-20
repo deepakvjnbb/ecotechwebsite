@@ -92,7 +92,7 @@ export default function ContactSection() {
                     href="mailto:support@ecotech.in"
                     className="ml-3 hover:text-gray-600"
                   >
-                    team@ecotechwater.in
+                    team@eco-tech.in
                   </a>
                 </dd>
               </div>
