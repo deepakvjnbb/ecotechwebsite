@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons';
 const navigation = {
     main: [
-      { name: 'Who we are', href: '#whoweare' },
-      { name: 'Our Products', href: '#ourproducts' },
-      { name: 'What do we do', href: '#whatdowedo' },
-      { name: 'Our Projects', href: '#ourprojects' },
-      { name: 'Contact us', href: '#contactus' },
+      { name: 'Who we are', href: 'whoweare' },
+      { name: 'Our Products', href: 'ourproducts' },
+      { name: 'What do we do', href: 'whatdowedo' },
+      { name: 'Our Projects', href: 'ourprojects' },
+      { name: 'Contact us', href: 'contactus' },
     ],
   }
   export default function FooterSection() {
